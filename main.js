@@ -21,6 +21,6 @@ console.log(test);
 test.forEach(element => {
     console.log(element[0]);
     document.querySelector(".card").innerHTML += `
-        <span><input id="remove" disabled type="checkbox" value='${element[0]}'>${element[1]} <a href="#" onClick="remove()">Remove</a></input></span><br>
+        <input id="remove" disabled type="checkbox" value='${element[0]}'>${element[1]} <a href="#" onClick="remove()">Remove</a></input><br>
     `
 });
